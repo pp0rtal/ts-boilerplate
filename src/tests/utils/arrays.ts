@@ -1,4 +1,4 @@
-import { expect } from 'chai';
+import {expect} from 'chai';
 
 import * as arrayUtils from '../../utils/arrays';
 
@@ -16,8 +16,10 @@ describe('Array utils', () => {
     });
 
     it('should return undefined for an empty array', () => {
-      const array = [];
+      const array: any[] = [];
       expect(arrayUtils.pickOne(array)).to.equal(undefined);
+
+      type test = | boolean;
     });
   });
 });
