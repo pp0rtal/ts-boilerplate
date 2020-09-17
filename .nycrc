@@ -1,4 +1,8 @@
 {
+  "extends": "@istanbuljs/nyc-config-typescript",
+  "include": [
+    "src/**/*"
+  ],
   "per-file": true,
   "lines": 100,
   "statements": 100,
@@ -8,5 +12,9 @@
   "cache": true,
   "sourceMap": true,
   "instrument": true,
-  "all": true
+  "all": true,
+  "reporter": [
+    "text",
+    "lcov"
+  ]
 }
