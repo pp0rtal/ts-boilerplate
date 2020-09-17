@@ -1,6 +1,6 @@
-import {expect} from 'chai';
+import { expect } from 'chai';
 
-import * as arrayUtils from '../../utils/arrays';
+import * as arrayUtils from '../../src/utils/arrays';
 
 describe('Array utils', () => {
   describe('pickOne', () => {
@@ -19,7 +19,7 @@ describe('Array utils', () => {
       const array: any[] = [];
       expect(arrayUtils.pickOne(array)).to.equal(undefined);
 
-      type test = | boolean;
+      type test = boolean;
     });
   });
 });
